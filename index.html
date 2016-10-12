@@ -1,0 +1,37 @@
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="TTT.js"></script>
+</head>
+<body>
+  <div class="title text-center">Tic Tac Toe</div>
+  <div class="game-board">
+    <div id="top-left" data-row="0" data-col="0" class="col-xs-4"></div>
+    <div id="top-middle" data-row="0" data-col="1" class="col-xs-4"></div>
+    <div id="top-right" data-row="0" data-col="2" class="col-xs-4"></div>
+    <div id="center-left" data-row="1" data-col="0" class="col-xs-4"></div>
+    <div id="center-middle" data-row="1" data-col="1" class="col-xs-4"></div>
+    <div id="center-right" data-row="1" data-col="2" class="col-xs-4"></div>
+    <div id="bottom-left" data-row="2" data-col="0" class="col-xs-4"></div>
+    <div id="bottom-middle" data-row="2" data-col="1" class="col-xs-4"></div>
+    <div id="bottom-right" data-row="2" data-col="2" class="col-xs-4"></div>
+  </div>
+
+  <div class="symbol-choice-box">
+    <div class="choice-desc text-center">Choose Either X or O!</div>
+    <div class="X-or-O clearfix">
+      <div class="X text-center">X</div><div class="O text-center">O</div>
+    </div>
+  </div>
+
+  <div class="desc text-center">Click a box to make a move!</div>
+
+  <script>
+    $(document).ready(function() {
+      $('.col-xs-4').on("click", handleClick);
+      $('.X-or-O').on("click", handleSymbolSelect);
+    });
+  </script>
+</body>

@@ -1,0 +1,82 @@
+.title {
+  font-size: 76px;
+}
+
+.game-board {
+  margin: 25px auto;
+  width: 500px;
+  height: 500px;
+  background: black;
+  padding: 20px;
+}
+
+.game-board > div {
+  width: 33.333333333%;
+  height: 33.33333333%;
+  background: black;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+  line-height: 1.05;
+}
+
+#top-left {
+  border-left: none;
+  border-top: none;
+}
+
+#top-middle {
+  border-top: none;
+}
+
+#top-right {
+  border-top: none;
+  border-right: none;
+}
+
+#center-left {
+  border-left: none;
+}
+
+#center-right {
+  border-right: none;
+}
+
+#bottom-left {
+  border-left: none;
+  border-bottom: none;
+}
+
+#bottom-middle {
+  border-bottom: none;
+}
+
+#bottom-right {
+  border-right: none;
+  border-bottom: none;
+}
+
+.desc {
+  font-size: 75px;
+}
+
+.symbol-choice-box {
+  font-size: 75px;
+}
+
+.X, .O {
+  float: left;
+  border: 5px solid black;
+  width: 100px;
+  cursor: pointer;
+}
+
+.X {
+  margin-left: 35%;
+}
+
+.O {
+  margin-left: 20%;
+}
